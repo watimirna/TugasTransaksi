@@ -1,0 +1,30 @@
+Table transaksi_header
+- id_transaksi_header int PRIMARY KEY
+- id_customer int
+- nomor_transaksi int	
+- tanggal_transaksi	date
+- total	int
+- diskon int
+- ppn int
+- grand_total int
+
+Table transaksi_detail
+- id_transaksi_detail int PRIMARY KEY
+- id_transaksi_header int
+- nomor int
+- id_barang int
+- qty int
+- harga int
+- jumlah int
+
+Table customer
+- id_customer int PRIMARY KEY
+- nama_customer varchar
+- nomor_telepon varchar
+- email	varchar
+
+Table Barang
+- id_barang int PRIMARY KEY
+- nama_barang varchar
+- harga_barang int
+- stok int
